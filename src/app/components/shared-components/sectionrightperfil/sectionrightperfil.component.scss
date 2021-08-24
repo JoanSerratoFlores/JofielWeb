@@ -1,0 +1,30 @@
+#monetiza {
+    background-color: orange;
+    border-radius: 8px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    h5 {
+        color: white;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+#preguntas {
+    background: white;
+    border-radius: 12px;
+}
+
+ion-content {
+    --background: #ddd;
+}
+
+p {
+    color: #073c66;
+    margin-left: auto;
+    display: block;
+    font-weight: bold;
+}

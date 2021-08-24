@@ -1,0 +1,55 @@
+#anadir {
+    --background: #ffffff;
+    --border-color: #073c66;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: orange;
+    --color-activated: orange;
+    --color-focused: orange;
+    --color-hover: orange;
+    margin: auto;
+    display: block;
+}
+
+#compartir {
+    --background: #ffffff;
+    --border-color: #073c66;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: #575656;
+    --color-activated: #575656;
+    --color-focused: #575656;
+    --color-hover: #575656;
+    margin: auto;
+    display: block;
+}
+
+ion-fab-button {
+    width: 25px;
+    height: 25px;
+    --box-shadow: 0px 0px;
+}
+
+#visibilidad {
+    cursor: pointer;
+}
+
+#cancelar {
+    --border-color: orange;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --background: #ffffff;
+    --color: #073c66;
+}
+
+#temas {
+    --border-color: orange;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --background: #ffffff;
+    --color: #073c66;
+}

@@ -1,0 +1,62 @@
+<ion-content>
+    <br>
+    <div id="monetiza">
+        <h5>Monetiza tus articulos</h5>
+    </div>
+    <ion-row id="monetizar" class="ion-margin-bottom">
+        <p>Consulta artículos académicos y científicos</p>
+        <p>Aprende más fácil respondiendo cuestionarios</p>
+        <p>Audio-Artículos - Estudia escuchando</p>
+        <ion-col class="ion-no-padding" size="12">
+            <ion-select *ngIf="isActive" placeholder="Materiales educativos" okText="Okay" cancelText="Dismiss">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+            </ion-select>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="12">
+            <ion-select placeholder="Contenidos jurídicos" okText="Okay" cancelText="Dismiss">
+                <ion-select-option value="brown">Brown</ion-select-option>
+                <ion-select-option value="blonde">Blonde</ion-select-option>
+                <ion-select-option value="black">Black</ion-select-option>
+                <ion-select-option value="red">Red</ion-select-option>
+            </ion-select>
+        </ion-col>
+        <ion-col size="12" *ngIf="isActive">
+            <ion-label>Referidos</ion-label>
+        </ion-col>
+        <ion-col size="12" *ngIf="isActive">
+            <ion-label>Referenciar un Jofieler</ion-label>
+        </ion-col>
+        <ion-col size="12" *ngIf="isActive">
+            <ion-label>Cursos</ion-label>
+        </ion-col>
+        <ion-col size="12" *ngIf="isActive">
+            <ion-label>Suscribirse</ion-label>
+        </ion-col>
+        <ion-col size="12">
+            <ion-button *ngIf="!isActive" id="vermas" color="whiteblue" size="small" (click)="isactive()">
+                Ver Más
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </ion-button>
+            <ion-button *ngIf="isActive" id="vermas" color="whiteblue" size="small" (click)="isntactive()">
+                Ver Menos
+                <ion-icon name="caret-up-outline"></ion-icon>
+            </ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row style="border-top: rgb(97, 97, 97) 1px solid;">
+        <ion-col class="ion-margin-top" id="articulos">
+            <h5>Articulos</h5>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <p style="color:#073c66">Juridicos</p>
+            <p style="color:#073c66">Ventas</p>
+            <p style="color:#073c66">Deportes</p>
+            <p style="color:#073c66">Ciencia y Tecnología</p>
+        </ion-col>
+    </ion-row>
+</ion-content>

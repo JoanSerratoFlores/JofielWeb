@@ -1,0 +1,207 @@
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 12%;
+    /* IE10 */
+    flex: 12%;
+    padding: 10px;
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+#aprendizaje {
+    background: white;
+    border-radius: 12px;
+    #audio {
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        h5 {
+            color: orange;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+
+#pregunta {
+    background: white;
+    border-radius: 12px;
+}
+
+#boton {
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    ion-button {
+        --background: #ddd;
+        --box-shadow: 0px 0px;
+        --color: #575656;
+        --border-radius: 50px;
+        border-radius: 50px;
+        width: -webkit-fill-available;
+        height: 50px;
+    }
+}
+
+#follow {
+    --background: #ffffff;
+    --background-activated: #ffffff;
+    --background-activated-opacity: 1;
+    --background-focused: #ffffff;
+    --background-focused-opacity: 1;
+    --background-hover: #ffffff;
+    --background-hover-opacity: 1;
+    --border-color: #ffffff;
+    --border-radius: 25px;
+    --border-style: solid;
+    --border-width: 8px;
+    --box-shadow: 0px 0px;
+    --color: #073c66;
+    --color-activated: #073c66;
+    --color-focused: #073c66;
+    --color-hover: #073c66;
+    --opacity: 1;
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-start: 0px;
+    --padding-top: 0px;
+    --ripple-color: #1e1e1e;
+    --transition: background-color 5ms linear;
+    width: auto;
+    font-size: 7px;
+    border: 1px orange solid;
+    border-radius: 25px;
+    height: 23px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+
+#nombreusuario {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#carrerausuario {
+    font-size: 10px;
+    margin: 0px;
+}
+
+#descusuario {
+    font-size: 9px;
+    margin: 0px;
+}
+
+.btnreaction {
+    border-bottom: grey 1px solid;
+    width: 100%;
+}
+
+#comments {
+    font-size: 7px;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+#view {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+#share {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+#sigue {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+.cajareaccion {
+    ion-img {
+        width: 17px;
+        margin: 0px 0px 10px -20px;
+    }
+    ion-icon {
+        margin-left: 10px;
+    }
+    p {
+        font-size: 8px;
+        margin-top: 3px;
+    }
+}
+
+.cajacomentarioprincipal {
+    padding: 0px 0px 0px 16px;
+    .commentusuario {
+        border-radius: 10px;
+        background-color: #ddd;
+        height: fit-content;
+        ion-col {
+            padding: 0px;
+            margin: 0px;
+        }
+        p {
+            padding: 0px;
+            margin: 0px;
+            font-size: 8px;
+        }
+    }
+}
+
+.reaction {
+    position: relative;
+    left: 13%;
+    bottom: 15px;
+    p {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .reaction {
+        margin: -10px 0px 0px 0px;
+    }
+}
+
+@media (max-width:720px) {
+    .reaction {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .main {
+        width: 100%;
+    }
+}

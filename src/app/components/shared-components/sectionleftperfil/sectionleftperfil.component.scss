@@ -1,0 +1,46 @@
+#avatar {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+ion-searchbar {
+    --background: white;
+    --border-radius: 25px;
+    border-radius: 25px;
+    --box-shadow: 0px;
+    --cancel-button-color: #073c66;
+    --clear-button-color: #073c66;
+    --icon-color: #073c66;
+    --placeholder-color: #073c66;
+    border: #073c66 1px solid;
+}
+
+#monetiza {
+    background-color: orange;
+    margin: 10px auto 0px auto;
+    border-radius: 8px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    h5 {
+        color: white;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+#monetizar {
+    color: #043C66;
+    p {
+        font-size: small;
+    }
+}
+
+#vermas {
+    border-radius: 25px;
+    --border-radius: 25px;
+    --background: #ddd;
+}

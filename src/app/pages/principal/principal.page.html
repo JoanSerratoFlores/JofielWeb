@@ -1,0 +1,258 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="row">
+        <div class="side" style="background: white;">
+            <app-sectionleft></app-sectionleft>
+        </div>
+
+
+        <div class="main" style="background: #ddd;">
+            <div id="aprendizaje">
+                <div id="audio">
+                    <h5>Aprende mas rapido y fácil escuchando audio-articulos y respondiendo cuestionarios</h5>
+                </div>
+            </div>
+            <br>
+            <div id="pregunta">
+                <div id="boton">
+                    <ion-button class="ion-margin" (click)="presentModal()">
+                        <ion-img class="ion-margin-end" style="width: 5%;" src="assets/iconos/escribir.png"></ion-img>
+                        <ion-label style="margin-right: auto;">Haz una pregunta a la comunidad</ion-label>
+                    </ion-button>
+                </div>
+            </div>
+            <br>
+            <div id="pregunta">
+                <div id="boton">
+                    <ion-button class="ion-margin">
+                        <ion-img class="ion-margin-end" style="width: 5%;" src="assets/iconos/foto.png"></ion-img>
+                        <ion-label style="margin-right: auto;">Pide ayuda para interpretar una imagen</ion-label>
+                    </ion-button>
+                </div>
+            </div>
+            <br>
+            <div id="pregunta">
+                <ion-grid>
+                    <ion-row size="12">
+                        <ion-col size="1.5">
+                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png"></ion-img>
+                        </ion-col>
+                        <ion-col size="6">
+                            <ion-row>
+                                <ion-col size="9" class="ion-no-margin ion-no-padding">
+                                    <p id="nombreusuario">Norman Riascos</p>
+                                    <p id="carrerausuario">Mag. Ingenieria</p>
+                                    <p id="descusuario">
+                                        Me encanta la tecnologia,siempre estoy buscando cosas nuevas
+                                    </p>
+                                </ion-col>
+                                <ion-col size="3" class="ion-no-margin ion-no-padding">
+                                    <p class="ion-no-margin" style="font-size:x-small;">12 horas</p>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-col class="ion-no-margin ion-no-padding" size="4">
+                            <ion-button id="follow">
+                                Seguir a Norman
+                            </ion-button>
+                            <ion-row size="12 ">
+                                <ion-col class="ion-no-margin ion-no-padding">
+                                    <ion-button id="follow">
+                                        Internet
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col class="ion-no-margin ion-no-padding">
+                                    <ion-button id="follow">
+                                        Ventas
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row class="ion-padding ion-no-margin">
+                        <ion-row class="ion-no-padding">
+                            <ion-col size="12">
+                                <b class="ion-no-padding" style="font-size: small;">Como invertir en la bolsa de valores por medio de Forex?</b>
+                            </ion-col>
+                        </ion-row>
+                        <ion-col size="11">
+                            <p class="ion-text-justify" style="font-size:smaller; margin-top: 0px;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese
+                                durcheinander warf um ein Musterbuch zu erstellen.
+                            </p>
+                        </ion-col>
+                        <ion-col size="1">
+                            <ion-icon class="ion-padding-top" (click)="presentPopover()" name="ellipsis-horizontal-outline"></ion-icon>
+                        </ion-col>
+                        <ion-row class="btnreaction ion-justify-content-center ion-no-margin">
+                            <ion-icon name="chatbox-outline"></ion-icon>
+                            <p id="comments">200 comentarios</p>
+                            <ion-icon style="margin-left:10px;" name="eye-outline"></ion-icon>
+                            <p id="view">200 visualizaciones</p>
+                            <ion-icon style="margin-left:10px;" name="share-social-outline"></ion-icon>
+                            <p id="share">200 compartidas</p>
+                            <ion-icon style="margin-left:10px;" name="add-outline"></ion-icon>
+                            <p id="sigue">200 siguiendo</p>
+                        </ion-row>
+                    </ion-row>
+                    <ion-row class="cajareaccion ion-justify-content-center ion-no-margin">
+                        <ion-img src="assets/icon/calp.png" (click)="Popoverrespuesta($event)"></ion-img>
+                        <p>50</p>
+                        <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
+                        <p>50</p>
+                        <ion-icon name="thumbs-down-outline" color="orange"></ion-icon>
+                        <p>2</p>
+                        <ion-icon name="chatbox-outline" color="orange"></ion-icon>
+                        <p>Comentar</p>
+                        <ion-icon name="share-social-outline" color="orange"></ion-icon>
+                        <p>Compartir</p>
+                        <ion-icon name="add-circle-outline" color="orange"></ion-icon>
+                        <p>Seguir Pregunta</p>
+                    </ion-row>
+                    <ion-row style="padding: 0px 0px 0px 16px;">
+                        <p class="ion-no-margin" style="font-size:x-small;">Quien pregunto</p>
+                        <p class="ion-no-margin ion-margin-start" style="font-size:x-small;">Otras respuestas(30)</p>
+                    </ion-row>
+                    <ion-row style="padding: 0px 0px 0px 16px;background-color: #ddd;border-radius: 25px;margin: 10px 10px 0px 10px;">
+                        <ion-img style="width:33px;" src="assets/iconos/mensaje.svg "></ion-img>
+                        <p style="padding-left: 10px;">Comentarios</p>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid style="border-top:grey 2px solid;">
+                    <ion-row class="cajacomentarioprincipal">
+                        <ion-col size="1.5" class="ion-no-padding">
+                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                        </ion-col>
+                        <ion-col class="commentusuario" size="10">
+                            <ion-row class="ion-no-margin ion-no-padding">
+                                <ion-col size="4.5">
+                                    <p style="font-size:10px; font-weight:bold;">Norman Riascos</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>Mag. Ingenieria</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>1 hora</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>Comentario</p>
+                                </ion-col>
+                                <ion-col>
+                                    <p style="font-size:x-small;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.</p>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-row class="reaction">
+                            <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
+                            <p>Reaccionar</p>
+                            <ion-icon name="thumbs-down-outline" color="orange"></ion-icon>
+                            <ion-icon class="ion-margin-start" name="chatbox-outline" color="orange"></ion-icon>
+                            <p>Comentar</p>
+                        </ion-row>
+                        <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;" size="12">
+                            <ion-col size="1.5" class="ion-no-padding">
+                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                            </ion-col>
+                            <ion-col class="commentusuario" size="10">
+                                <ion-row class="ion-no-margin ion-no-padding">
+                                    <ion-col size="4.5">
+                                        <p style="font-size:10px; font-weight:bold;">Norman Riascos</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>Mag. Ingenieria</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>1 hora</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>Comentario</p>
+                                    </ion-col>
+                                    <ion-col>
+                                        <p style="font-size:x-small;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.</p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-row class="reaction">
+                                <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
+                                <p>Reaccionar</p>
+                                <ion-icon name="thumbs-down-outline" color="orange"></ion-icon>
+                                <ion-icon class="ion-margin-start" name="chatbox-outline" color="orange"></ion-icon>
+                                <p>Comentar</p>
+                            </ion-row>
+                        </ion-row>
+                        <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;">
+                            <ion-col size="1.5" class="ion-no-padding">
+                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                            </ion-col>
+                            <ion-col class="commentusuario" size="10">
+                                <ion-row class="ion-no-margin ion-no-padding">
+                                    <ion-col size="4.5">
+                                        <p style="font-size:10px; font-weight:bold;">Norman Riascos</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>Mag. Ingenieria</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>1 hora</p>
+                                    </ion-col>
+                                    <ion-col size="2.5">
+                                        <p>Comentario</p>
+                                    </ion-col>
+                                    <ion-col>
+                                        <p style="font-size:x-small;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.</p>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-col>
+                            <ion-row class="reaction">
+                                <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
+                                <p>Reaccionar</p>
+                                <ion-icon name="thumbs-down-outline" color="orange"></ion-icon>
+                                <ion-icon class="ion-margin-start" name="chatbox-outline" color="orange"></ion-icon>
+                                <p>Comentar</p>
+                            </ion-row>
+                        </ion-row>
+                    </ion-row>
+                    <ion-row class="cajacomentarioprincipal">
+                        <ion-col size="1.5" class="ion-no-padding">
+                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                        </ion-col>
+                        <ion-col class="commentusuario" size="10">
+                            <ion-row class="ion-no-margin ion-no-padding">
+                                <ion-col size="4.5">
+                                    <p style="font-size:10px; font-weight:bold;">Norman Riascos</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>Mag. Ingenieria</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>1 hora</p>
+                                </ion-col>
+                                <ion-col size="2.5">
+                                    <p>Comentario</p>
+                                </ion-col>
+                                <ion-col>
+                                    <p style="font-size:x-small;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.</p>
+                                </ion-col>
+                            </ion-row>
+                        </ion-col>
+                        <ion-row class="reaction">
+                            <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
+                            <p>Reaccionar</p>
+                            <ion-icon name="thumbs-down-outline" color="orange"></ion-icon>
+                            <ion-icon class="ion-margin-start" name="chatbox-outline" color="orange"></ion-icon>
+                            <p>Comentar</p>
+                        </ion-row>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </div>
+
+
+        <div class="side" style="background: #ddd;">
+            <app-sectionright></app-sectionright>
+        </div>
+    </div>
+
+</ion-content>

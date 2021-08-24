@@ -1,0 +1,260 @@
+<ion-header *ngIf="step!=1">
+    <ion-toolbar>
+        <ion-img class="ion-margin-start" style="width: 15%;margin-left: 0px;margin-right:auto;" src="assets/iconos/jofiel_blanco-06.svg"></ion-img>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <form (ngSubmit)="submit()" style="height: 100%;">
+        <div class="content" *ngIf="step==1">
+            <ion-grid>
+                <ion-row id="contenedor">
+                    <ion-col class="registerform ion-padding">
+                        <ion-row>
+                            <ion-col class="ion-text-center">
+                                <ion-img id="logo" src=" ../../assets/iconos/Jofiel logos-01.png"></ion-img>
+                                <p style="color: white;line-height: 14px;">Tu Red Social de Conocimiento</p>
+                                <p style="color: orange;line-height: 14px;font-size: 11px;margin: 0px -15px 0px -15px;">Aprende más rápido y fácil escuchando audio-artículos y respondiendo cuestionarios.</p>
+                            </ion-col>
+                        </ion-row>
+                        <ion-grid id="crearcuenta">
+                            <ion-row class="ion-text-center">
+                                <ion-col size="12" style="border-bottom: grey 2px solid;">
+                                    <h1 style="color: #063457;" class="ion-no-margin">Crea una cuenta gratis</h1>
+                                    <p class="ion-no-margin" style="font-size: small;">Por favor diligencie el siguiente formulario</p>
+                                </ion-col>
+                            </ion-row>
+                            <div class="form-label-group">
+                                <ion-input type="text" id="inputNombre" class="form-control" placeholder="Nombre" required autofocus></ion-input>
+                            </div>
+                            <div class="form-label-group">
+                                <ion-input type="text" id="inputApellido" class="form-control" placeholder="Apellido" required></ion-input>
+                            </div>
+                            <div class="form-label-group">
+                                <ion-input type="email" id="inputEmail" class="form-control" placeholder="Email" required></ion-input>
+                            </div>
+                            <div class="form-label-group">
+                                <ion-input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required></ion-input>
+                            </div>
+                            <div class="form-label-group">
+                                <ion-input type="text" id="inputUsuario" class="form-control" placeholder="Usuario" required></ion-input>
+                            </div>
+                            <ion-row>
+                                <ion-col style="line-height: 10px;">
+                                    <ion-checkbox color="orange"></ion-checkbox>
+
+                                    <ion-label style="font-size: 0.5rem; color: #94908d;line-height: 14px;">Al entrar con una red social indica que has leído y acepta las
+                                        <strong style="color: blue;">condiciones de servicio. Política de Privacidad y Política de Derechos de Autor </strong> de Jofiel
+                                    </ion-label>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="12" id="iniciarsesion" style="margin-left: 70%;">
+                                    <a style="color: blue;" href="#">Iniciar sesión</a>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col size="12">
+                                    <ion-button id="btn" size="small" color="orange" style="font-size: 12px;">Cancelar</ion-button>
+                                    <ion-button id="btn" size="small" color="orange" style="font-size: 12px;" type="submit">Crear Cuenta</ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div *ngIf="step==2">
+            <ion-row>
+                <div class="side">
+                    <h1>Oops! espera, faltan 2 pasos para completar tu perfil</h1>
+                    <hr>
+                    <h3>A continuacion, escoge tus temas y sectores de interés</h3>
+                </div>
+                <div class="main">
+                    <ion-img id="paso1" src="assets/icon/paso1.png"></ion-img>
+                    <ion-row>
+                        <div class="side">
+                            <ion-col id="tablatema">
+                                <p id="titulotemas">Temas</p>
+                                <ion-grid id="temas">
+                                    <ion-row id="caja">
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row style="border-top: rgb(116, 116, 116) 1px solid;">
+                                        <ion-col class="ion-margin-top">
+                                            <ion-searchbar id="buscartema" placeholder="Buscar Tema"></ion-searchbar>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-col>
+                        </div>
+                        <div class="main">
+                            <ion-col id="tablatema">
+                                <p id="titulotemas">Sectores</p>
+                                <ion-grid id="temas">
+                                    <ion-row id="caja">
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="tema">
+                                                <ion-fab id="botontema" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botontemas">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombretema" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row style="border-top: rgb(116, 116, 116) 1px solid;">
+                                        <ion-col class="ion-margin-top">
+                                            <ion-searchbar id="buscartema" placeholder="Buscar Sector"></ion-searchbar>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-col>
+                        </div>
+                        <ion-button type="submit" id="continuar" color="whiteblue">
+                            Continuar
+                        </ion-button>
+                    </ion-row>
+                </div>
+            </ion-row>
+            <ion-img id="ok" src="assets/icon/oksc.png"></ion-img>
+        </div>
+        <div *ngIf="step==3">
+            <ion-row>
+                <div class="side">
+                    <h1>Solo falta 1 paso para completar tu perfil</h1>
+                    <hr>
+                    <h3>Si tu interes es producir Articulos Academicos o Científicos, puedes convertir en un usuario
+                        <span style="color: orange;">Jofieler</span>, escoger las categoriasy comenzar a ganar dinero.
+                    </h3>
+                </div>
+                <div class="main">
+                    <ion-img id="paso1" src="assets/icon/paso2.png"></ion-img>
+                    <ion-row>
+                        <div class="side">
+                            <ion-col id="tablacategoria">
+                                <p id="titulocategorias">Categorias</p>
+                                <ion-grid id="categorias">
+                                    <ion-row id="caja">
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="categoria">
+                                                <ion-fab id="botoncategoria" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botoncategorias">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombrecategoria" class="ion-text-center ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="categoria">
+                                                <ion-fab id="botoncategoria" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botoncategorias">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombrecategoria" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                        <ion-col class="ion-margin-top ion-margin-bottom">
+                                            <div id="categoria">
+                                                <ion-fab id="botoncategoria" horizontal="end" vertical="bottom">
+                                                    <ion-fab-button color="whiteblue" id="botoncategorias">
+                                                        <ion-icon name="close-outline"></ion-icon>
+                                                    </ion-fab-button>
+                                                </ion-fab>
+                                                <ion-label id="nombrecategoria" class="ion-margin">Infraestructura y Condiciones</ion-label>
+                                            </div>
+                                        </ion-col>
+                                    </ion-row>
+                                    <ion-row style="border-top: rgb(116, 116, 116) 1px solid;">
+                                        <ion-col class="ion-margin-top">
+                                            <ion-searchbar id="buscarcategoria" placeholder="Buscar categoria"></ion-searchbar>
+                                        </ion-col>
+                                    </ion-row>
+                                </ion-grid>
+                            </ion-col>
+                        </div>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div class="ion-float-right">
+                                <ion-button id="omitir" color="whiteblue" type="submit">
+                                    Omitir
+                                </ion-button>
+                                <ion-button class="ion-margin-start" id="finalizar" color="whiteblue" type="submit">
+                                    Finalizar
+                                </ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </div>
+            </ion-row>
+        </div>
+        <div *ngIf="step==4">
+            <ion-row>
+                <div class="side" id="columna1">
+                    <ion-img style="width: 250px;" src="assets/iconos/Jofiel logos-01.png"></ion-img>
+                    <p style="color: orange;font-size: larger;">Tu Red Social de Conocimiento</p>
+                </div>
+                <div class="main" id="columna1">
+                    <p style="font-size: 66px;color: #063457;margin: 0px;">Bienvenido</p>
+                    <p style="font-size: 30px; color: orange;margin: 24px;">Gracias por Registrarte</p>
+                    <ion-button id="aceptar" color="orange" (click)="tohome()">
+                        Aceptar
+                    </ion-button>
+                </div>
+            </ion-row>
+        </div>
+    </form>
+</ion-content>

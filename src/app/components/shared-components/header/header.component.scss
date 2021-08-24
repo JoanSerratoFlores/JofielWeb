@@ -1,0 +1,152 @@
+#header {
+    --background: #073c66;
+    #buscar {
+        width: 300px;
+        ;
+        border-radius: 25px;
+        --border-radius: 25px;
+    }
+    #logo {
+        width: 10%;
+    }
+    #inicio {
+        width: 65%;
+        margin-right: auto;
+        display: block;
+    }
+    #circulo {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #pregunta {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #mensaje {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #audio {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #coin {
+        width: 46%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #noti {
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #avatar {
+        width: 100%;
+        margin-right: 25px;
+        margin-left: 0px;
+    }
+    #preguntar {
+        font-size: x-small;
+        height: 33px;
+        border-radius: 8px;
+        --border-radius: 8px;
+    }
+    #yo {
+        color: #073c66;
+        background: white;
+        border-radius: 50px;
+        z-index: 100;
+        position: relative;
+        left: 22px;
+        font-size: 20px;
+        top: -10px;
+    }
+}
+
+#header2 {
+    --background: #073c66;
+    display: none;
+    #buscar {
+        width: 70%;
+        ;
+        border-radius: 25px;
+        --border-radius: 25px;
+    }
+    #logo {
+        width: 25%;
+    }
+    #inicio {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #circulo {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #pregunta {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #mensaje {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #audio {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #coin {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #noti {
+        width: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #avatar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #preguntar {
+        font-size: x-small;
+        height: 33px;
+        border-radius: 8px;
+        --border-radius: 8px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #header {
+        display: none;
+    }
+    #header2 {
+        display: block;
+    }
+}
