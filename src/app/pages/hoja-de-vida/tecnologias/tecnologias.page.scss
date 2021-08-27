@@ -1,0 +1,66 @@
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 12%;
+    /* IE10 */
+    flex: 12%;
+    padding: 10px;
+}
+
+.side::before {
+    content: '';
+    height: 75%; //You can change this if you want smaller/bigger borders
+    width: 2px;
+    position: absolute;
+    right: -10px;
+    top: 0; // If you want to set a smaller height and center it, change this value
+    background-color: #043C66; // The color of your border
+    //
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    padding: 10px;
+}
+
+#dondelaboro {
+    border: 2px solid #043C66;
+    border-radius: 5px;
+    color: #043C66;
+}
+
+#fechainicio {
+    border: 3px #043C66 solid;
+    border-radius: 12px;
+    color: #043C66;
+}
+
+#Guardar {
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#Cerrar {
+    border: 1px solid orange;
+    border-radius: 5px;
+}
+
+#link {
+    float: right;
+    color: #F4870F;
+    text-decoration: underline;
+    text-decoration-color: #043C66;
+}
+
+ion-checkbox {
+    --border-color: orange;
+}

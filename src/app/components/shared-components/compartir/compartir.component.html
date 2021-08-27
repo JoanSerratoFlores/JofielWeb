@@ -1,0 +1,61 @@
+<ion-content class="ion-padding">
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+        <ion-fab-button color="blue" (click)="dismissmodal()">
+            <ion-icon name="close-outline"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <ion-row class="ion-margin-top">
+        <ion-col size="2">
+            <ion-img src="assets/iconos2/avatar.png"></ion-img>
+        </ion-col>
+        <ion-col>
+            <h4 style="font-weight: bold;margin-bottom: 0px;">Juan Salazar</h4>
+            <p class="ion-no-margin">Mag. Ingenieria</p>
+        </ion-col>
+        <ion-col class="ion-padding-top">
+            <ion-toggle color="blue" style="padding: 4px 0px 4px 0px;">
+            </ion-toggle>
+            <ion-label style="font-size: smaller; ">Mostrar mi Nombre</ion-label>
+        </ion-col>
+        <ion-col id="visibilidad">
+            <ion-row (click)="PopoverVisibilidad($event)" class="ion-margin-top">
+                <ion-img style="width: 10%;" src="assets/iconos/circulos.png"></ion-img>
+                <ion-label class="ion-margin-start ion-margin-end">Visibilidad</ion-label>
+                <ion-img style="width: 10%;" src="assets/icon/arowdow.png"></ion-img>
+            </ion-row>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-row>
+            <ion-col id="inputpregunta">
+                <ion-textarea placeholder="Haz una pregunta a la comunidad "></ion-textarea>
+            </ion-col>
+        </ion-row>
+        <ion-row id="link">
+            <ion-col size="1">
+                <ion-img id="imglink" src="assets/iconos2/link.svg"></ion-img>
+            </ion-col>
+            <ion-col size="11">
+                <ion-input type="url" placeholder="Escribe algo..."></ion-input>
+            </ion-col>
+        </ion-row>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-button class="ion-float-right" id="temas" size="small" color="whiteblue" (click)="PopoverTema($event)">
+                Tema
+            </ion-button>
+            <ion-button class="ion-float-right" id="temas" size="small" color="whiteblue" (click)="PopoverSector($event)">
+                Sector o Categoria
+            </ion-button>
+        </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin-top">
+        <ion-col>
+            <ion-button id="anadir">
+                Compartir Contenido
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-content>

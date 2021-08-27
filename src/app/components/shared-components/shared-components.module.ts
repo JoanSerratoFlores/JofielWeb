@@ -1,3 +1,9 @@
+import { LeftCVComponent } from './left-cv/left-cv.component';
+import { SectionrightcuestionnComponent } from './sectionrightcuestionn/sectionrightcuestionn.component';
+import { SectionleftcuestionnComponent } from './sectionleftcuestionn/sectionleftcuestionn.component';
+import { CompartirComponent } from './compartir/compartir.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
 import { VisibilidadComponent } from './visibilidad/visibilidad.component';
 import { PopovertemaaComponent } from './popovertemaa/popovertemaa.component';
 import { PopoversectorComponent } from './popoversector/popoversector.component';
@@ -12,6 +18,10 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { SectionleftperfilComponent } from './sectionleftperfil/sectionleftperfil.component';
 import { SectionrightperfilComponent } from './sectionrightperfil/sectionrightperfil.component';
+import { InfoComponent } from './info/info.component';
+import { FuncioneslaboralesComponent } from './funcioneslaborales/funcioneslaborales.component';
+import { HistorialhabilidadesComponent } from './historialhabilidades/historialhabilidades.component';
+import { ModalCargararchivocvComponent } from './modal-cargararchivocv/modal-cargararchivocv.component';
 
 
 
@@ -27,7 +37,17 @@ import { SectionrightperfilComponent } from './sectionrightperfil/sectionrightpe
     PopovertemaaComponent,
     VisibilidadComponent,
     SectionleftperfilComponent,
-  SectionrightperfilComponent],
+    SectionrightperfilComponent,
+    NotificacionesComponent,
+    PerfilComponent,
+    CompartirComponent,
+    SectionleftcuestionnComponent,
+    SectionrightcuestionnComponent,
+    LeftCVComponent,
+    InfoComponent,
+    FuncioneslaboralesComponent,
+    HistorialhabilidadesComponent,
+    ModalCargararchivocvComponent],
   exports:[
     HeaderComponent,
     SectionleftComponent,
@@ -39,7 +59,17 @@ import { SectionrightperfilComponent } from './sectionrightperfil/sectionrightpe
     PopovertemaaComponent,
     VisibilidadComponent,
     SectionleftperfilComponent,
-    SectionrightperfilComponent],
+    SectionrightperfilComponent,
+    NotificacionesComponent,
+    PerfilComponent,
+    CompartirComponent,
+    SectionleftcuestionnComponent,
+    SectionrightcuestionnComponent,
+    LeftCVComponent,
+    InfoComponent,
+    FuncioneslaboralesComponent,
+    HistorialhabilidadesComponent,
+    ModalCargararchivocvComponent],
   imports: [
     CommonModule,
     IonicModule

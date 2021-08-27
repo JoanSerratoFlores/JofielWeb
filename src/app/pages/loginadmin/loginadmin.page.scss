@@ -8,11 +8,8 @@
 }
 
 #contenedor {
-    margin-left: auto;
-    margin-right: auto;
-    width: 44%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto 5% auto;
+    width: 27%;
 }
 
 .login {
@@ -51,7 +48,7 @@ ion-img {
 }
 
 @media (max-width: 768px) {
-    .loginadmin {
+    .login {
         position: absolute;
         background-color: white;
         width: 95%;
@@ -61,7 +58,7 @@ ion-img {
 }
 
 @media (max-width:320px) {
-    .loginadmin {
+    .login {
         position: absolute;
         background-color: white;
         width: 95%;

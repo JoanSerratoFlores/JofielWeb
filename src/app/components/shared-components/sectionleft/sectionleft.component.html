@@ -8,7 +8,7 @@
         <p>Aprende más fácil respondiendo cuestionarios</p>
         <p>Audio-Artículos - Estudia escuchando</p>
         <ion-col class="ion-no-padding" size="12">
-            <ion-select *ngIf="isActive" placeholder="Materiales educativos" okText="Okay" cancelText="Dismiss">
+            <ion-select *ngIf="isactive" placeholder="Materiales educativos" okText="Okay" cancelText="Dismiss">
                 <ion-select-option value="brown">Brown</ion-select-option>
                 <ion-select-option value="blonde">Blonde</ion-select-option>
                 <ion-select-option value="black">Black</ion-select-option>
@@ -16,31 +16,81 @@
             </ion-select>
         </ion-col>
         <ion-col class="ion-no-padding" size="12">
-            <ion-select placeholder="Contenidos jurídicos" okText="Okay" cancelText="Dismiss">
-                <ion-select-option value="brown">Brown</ion-select-option>
-                <ion-select-option value="blonde">Blonde</ion-select-option>
-                <ion-select-option value="black">Black</ion-select-option>
-                <ion-select-option value="red">Red</ion-select-option>
-            </ion-select>
+            <div>
+                <p *ngIf="!actived" (click)="activedd()" style="color: #073c66;font-weight: bold; cursor: pointer;">
+                    Contenido Jurídico
+                    <ion-icon name="caret-down-outline"></ion-icon>
+                </p>
+                <div id="sector">
+                    <p *ngIf="actived" (click)="inactived()" style="font-weight: bold;cursor: pointer;">
+                        Contenido Jurídico
+                    </p>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Decreto Aduanero</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Estatuto Nacional Aduanero</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Código de Policia nacional</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Colombiano</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Codigo sustantivo del trabajo</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Código del Régimen Departamental</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Código del Régimen Municipal</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Código Electoral</ion-label>
+                    </ion-chip>
+                </div>
+                <div>
+                    <ion-chip *ngIf="actived" color="blue" outline="false">
+                        <ion-label>Código de Educación</ion-label>
+                    </ion-chip>
+                </div>
+            </div>
         </ion-col>
-        <ion-col size="12" *ngIf="isActive">
+        <ion-col size="12" *ngIf="isactive">
             <ion-label>Referidos</ion-label>
         </ion-col>
-        <ion-col size="12" *ngIf="isActive">
+        <ion-col size="12" *ngIf="isactive">
             <ion-label>Referenciar un Jofieler</ion-label>
         </ion-col>
-        <ion-col size="12" *ngIf="isActive">
+        <ion-col size="12" *ngIf="isactive">
             <ion-label>Cursos</ion-label>
         </ion-col>
-        <ion-col size="12" *ngIf="isActive">
+        <ion-col size="12" *ngIf="isactive">
             <ion-label>Suscribirse</ion-label>
         </ion-col>
         <ion-col size="12">
-            <ion-button *ngIf="!isActive" id="vermas" color="whiteblue" size="small" (click)="isactive()">
+            <ion-button *ngIf="!isactive" id="vermas" color="whiteblue" size="small" (click)="active()">
                 Ver Más
                 <ion-icon name="caret-down-outline"></ion-icon>
             </ion-button>
-            <ion-button *ngIf="isActive" id="vermas" color="whiteblue" size="small" (click)="isntactive()">
+            <ion-button *ngIf="isactive" id="vermas" color="whiteblue" size="small" (click)="inactive()">
                 Ver Menos
                 <ion-icon name="caret-up-outline"></ion-icon>
             </ion-button>

@@ -1,0 +1,107 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="row">
+        <div class="side">
+            <app-left-cv></app-left-cv>
+        </div>
+        <div class="main">
+            <ion-grid>
+                <ion-row>
+                    <app-info></app-info>
+                </ion-row>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <div style="font-weight: bold; color: #043C66; ">
+                                <p style="border-bottom: #043C66 2px solid; width:50%;">
+                                    Nombres de Articulos Academicos y/o Cientificos
+                                </p>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-input id="NombreArticulo" placeholder="Nombre"></ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-row>
+                        <ion-col>
+                            <ion-select id="tipoarticulo" interface="popover" placeholder="Tipo de Articulo">
+                                <ion-select-option value="Artículo original">Artículo original</ion-select-option>
+                                <ion-select-option value="Artículo de revisión">Artículo de revisión</ion-select-option>
+                                <ion-select-option value="Artículo de metanálisis">Artículo de metanálisis</ion-select-option>
+                                <ion-select-option value="Estudio de caso">Estudio de caso</ion-select-option>
+                                <ion-select-option value="Reseña">Reseña</ion-select-option>
+                                <ion-select-option value="Notas técnicas">Notas técnicas</ion-select-option>
+                            </ion-select>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-row>
+                        <ion-col>
+                            <div style="border:#043C66 3px solid; border-radius: 25px;">
+                                <ion-searchbar class="ion-no-padding" color="bluelight" placeholder="Area"></ion-searchbar>
+                            </div>
+                        </ion-col>
+                        <ion-col class="ion-no-padding">
+                            <ion-row>
+                                <ion-item id="fechaarticulo">
+                                    <ion-datetime color="bluelight" placeholder="Fecha de Publicacion">
+                                    </ion-datetime>
+                                    <ion-icon style="font-size: x-large;" color="orange" slot="end" name="calendar-outline"></ion-icon>
+                                </ion-item>
+                            </ion-row>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-row>
+                        <ion-col id="desc" class="ion-padding-start">
+                            <div style="background-color: #ddd; margin: -6px -6px 0px -17px; border-radius: 5px 5px 0px 0px;">
+                                <ion-label class="ion-no-padding" color="blue" style="margin:0px 0px 0px 16px;">Descripcion</ion-label>
+                            </div>
+                            <ion-textarea style="margin: 0px 0px 0px -10px;"></ion-textarea>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <ion-input type="url" id="NombreArticulo" placeholder="URL del Articulo">
+                                    <ion-icon style="font-size: x-large;" name="link-outline"></ion-icon>
+                                </ion-input>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <ion-checkbox color="orange" checked="false">
+                                </ion-checkbox>
+                                <ion-label class="ion-padding-start">Visible para Todos</ion-label>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <ion-button color="whiteblue" id="Guardar">Guardar</ion-button>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <ion-button color="whiteblue" id="Cerrar">Cerrar</ion-button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

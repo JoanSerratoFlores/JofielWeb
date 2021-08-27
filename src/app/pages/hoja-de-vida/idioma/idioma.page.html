@@ -1,0 +1,187 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="row">
+        <div class="side">
+            <app-left-cv></app-left-cv>
+        </div>
+        <div class="main">
+            <ion-grid>
+                <ion-row>
+                    <app-info></app-info>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div style="font-weight: bold; color: #043C66; ">
+                            <p style="border-bottom: #043C66 2px solid; width:50%;">
+                                Agregar idiomas
+                            </p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-item id="select">
+                            <ion-label>Lengua nativa</ion-label>
+                            <ion-select [(ngModel)]="selected_native" interface="popover">
+                                <ion-select-option value="Espanol">Espanol</ion-select-option>
+                                <ion-select-option value="Ingles">Ingles</ion-select-option>
+                                <ion-select-option value="Frances">Frances</ion-select-option>
+                                <ion-select-option value="Italiano">Italiano</ion-select-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row style="border-bottom: #043C66 1px solid; width: 95%;">
+                    <ion-col>
+                        <h4 style="color: #043C66; font-weight: bold;">{{selected_native}}</h4>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                    <ion-col>
+                        <div style="font-weight: bold; color: #ff7700; ">
+                            <h4>
+                                Agregar idiomas
+                            </h4>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-item id="select">
+                            <ion-label>Seleccione un Idioma</ion-label>
+                            <ion-select [(ngModel)]="selected_extra" interface="popover">
+                                <ion-select-option value="Espanol">Espanol</ion-select-option>
+                                <ion-select-option value="Ingles">Ingles</ion-select-option>
+                                <ion-select-option value="Frances">Frances</ion-select-option>
+                                <ion-select-option value="Italiano">Italiano</ion-select-option>
+                            </ion-select>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <h4 style="color: #043C66; font-weight: bold;">{{selected_extra}}</h4>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-label>Habla</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Bajo</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Medio</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Alto</ion-label>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-label>Escrito</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Bajo</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Medio</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Alto</ion-label>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-label>Lee</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Bajo</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Medio</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Alto</ion-label>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-label>Escucha</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Bajo</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Medio</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Alto</ion-label>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                    <ion-col size="4.5">
+
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-button color="whiteblue" id="Cerrar">Cerrar</ion-button>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+        </div>
+    </div>
+</ion-content>

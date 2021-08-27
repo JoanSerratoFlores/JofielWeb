@@ -17,10 +17,12 @@ export class PrincipalPage implements OnInit {
     public router:Router,
     public modalctrl:ModalController) {}
 
-  async presentPopover() {
+  async presentPopover(ev) {
     const popover = await this.popoverController.create({
       component: OpcionesComponent,
-      cssClass: 'my-custom-class',
+      cssClass: 'popoveropciones',
+      event:ev,
+      mode:"ios",
       translucent: true
     });
     await popover.present();

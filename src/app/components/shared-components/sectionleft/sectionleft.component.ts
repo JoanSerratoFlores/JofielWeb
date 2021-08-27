@@ -6,17 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sectionleft.component.scss'],
 })
 export class SectionleftComponent implements OnInit {
-
-  public isActive: boolean = false;
+  isactive:boolean=false;
+  actived:boolean=false;
+  
     constructor() { }
-
-  ngOnInit() {
-  }
-isactive(){
-  this.isActive=true
-}
-isntactive(){
-  this.isActive=false
-}
+  
+    ngOnInit() {}
+  
+    active(){
+      this.isactive=true
+    }
+    inactive(){
+      this.isactive=false
+    }
+    activedd(){
+      this.actived=true
+    }
+    inactived(){
+      this.actived=false
+    }
  
 }

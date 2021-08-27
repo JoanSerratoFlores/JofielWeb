@@ -1,0 +1,48 @@
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 12%;
+    /* IE10 */
+    flex: 12%;
+    padding: 10px;
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    background-color: white;
+    padding: 10px;
+}
+
+#aprendizaje {
+    background: white;
+    border-radius: 12px;
+    #audio {
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+    .main {
+        width: 100%;
+    }
+    .side {
+        display: none;
+    }
+    ion-label {
+        font-size: x-small;
+    }
+}

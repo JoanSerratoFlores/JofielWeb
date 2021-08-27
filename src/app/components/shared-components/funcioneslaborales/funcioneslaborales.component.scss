@@ -1,0 +1,47 @@
+table {
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 0px 0px 6px 6px;
+    //-moz-border-radius: 0px 0px 6px 6px;
+}
+
+tr {
+    background-color: white;
+}
+
+td,
+th {
+    border: 2px solid #043C66;
+    text-align: left;
+    padding: 6px;
+}
+
+ion-searchbar {
+    width: 75%;
+    background-color: #043C66;
+    border-radius: 5px 5px 0px 0px;
+    --border-radius: 25px;
+    color: #043C66;
+}
+
+ion-button {
+    border: orange 1px solid;
+    --border-radius: 12px;
+    border-radius: 12px;
+    position: relative;
+    left: 43%;
+}
+
+h2 {
+    font-weight: bold;
+    border-bottom: #043C66 3px solid;
+    width: max-content;
+    position: relative;
+    margin-left: 13%;
+}
+
+#trabajo {
+    border-bottom: grey 3px solid;
+    width: max-content;
+    margin-left: 13%;
+}

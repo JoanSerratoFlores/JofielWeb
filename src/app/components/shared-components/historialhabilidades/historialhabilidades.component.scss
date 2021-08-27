@@ -1,0 +1,85 @@
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 12%;
+    /* IE10 */
+    flex: 12%;
+    padding: 10px;
+}
+
+.side::before {
+    content: '';
+    height: 75%; //You can change this if you want smaller/bigger borders
+    width: 2px;
+    position: absolute;
+    right: -10px;
+    top: 0; // If you want to set a smaller height and center it, change this value
+    background-color: #043C66; // The color of your border
+    //
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    padding: 10px;
+}
+
+ion-col>div {
+    background-color: #043C66;
+    border: solid 1px #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+}
+
+#rr ion-col>div {
+    background-color: grey;
+    border: solid 1px #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+}
+
+ion-grid {
+    border: 1px grey solid;
+    position: relative;
+    bottom: 18px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#buscar {
+    border: 1px orange solid;
+    border-radius: 23px;
+    --border-radius: 23px;
+}
+
+#Guardar {
+    border: 2px solid #F4870F;
+    border-radius: 5px;
+}
+
+#Cerrar {
+    border: 2px solid #F4870F;
+    border-radius: 5px;
+}
+
+#btn {
+    background-color: white;
+    border: solid 0px white;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}

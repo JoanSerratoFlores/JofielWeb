@@ -1,0 +1,60 @@
+ion-card-header {
+    border-bottom: #043C66 2px solid
+}
+
+#bar {
+    background-color: #043C66;
+}
+
+h2 {
+    color: #043C66;
+}
+
+h1 {
+    color: #043C66;
+}
+
+ion-progress-bar {
+    border-radius: 50px;
+    --border-radius: 50px;
+    border: #043C66 2px solid;
+    --background: white;
+    --buffer-background: white;
+    --progress-background: #F4870F;
+    height: 20px;
+    width: 90%;
+}
+
+#porcentaje {
+    position: relative;
+    bottom: 17px;
+    left: 90%;
+    color: #073c66;
+    font-weight: bolder;
+}
+
+#link {
+    float: right;
+    color: #F4870F;
+    text-decoration: underline;
+    text-decoration-color: #043C66;
+}
+
+.underline {
+    color: #F4870F;
+}
+
+#column02 {
+    position: relative;
+}
+
+#column02::before {
+    content: '';
+    height: 75%; //You can change this if you want smaller/bigger borders
+    width: 2px;
+    position: absolute;
+    right: -10px;
+    top: 0; // If you want to set a smaller height and center it, change this value
+    background-color: #043C66; // The color of your border
+    //
+}

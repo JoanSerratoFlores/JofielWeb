@@ -1,0 +1,145 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="row">
+        <div class="side">
+            <app-left-cv></app-left-cv>
+        </div>
+        <div class="main">
+            <ion-grid>
+                <ion-row>
+                    <app-info></app-info>
+                </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div style="font-weight: bold; color: #043C66;">
+                            <p style="border-bottom: #043C66 2px solid;">
+                                Proyectos Academicos
+                            </p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-input id="nombre" placeholder="Nombre del Proyecto"></ion-input>
+                        </div>
+                    </ion-col>
+                    <ion-col style="padding:20px">
+                        <ion-checkbox color="orange"></ion-checkbox>
+                        <ion-label class="ion-margin-start">Visible para todos</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-input id="categoria" placeholder="Categoria del Proyecto"></ion-input>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-item style="border: 2px solid #043C66;border-radius: 5px;">
+                            <ion-datetime displayFormat="DD/MMM/YYYY" style="color: #043C66;" placeholder="Fecha de Publicacion">
+                            </ion-datetime>
+                            <ion-icon color="orange" slot="end" name="calendar-outline"></ion-icon>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col style="padding:15px">
+                        <div>
+                            <ion-checkbox color="orange"></ion-checkbox>
+                            <ion-label class="ion-margin-start">Actualmente</ion-label>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <ion-item style="border: 2px solid #043C66;border-radius: 5px;">
+                            <ion-datetime displayFormat="DD/MMM/YYYY" style="color: #043C66;" placeholder="Fecha de Finalizacion">
+                            </ion-datetime>
+                            <ion-icon color="orange" slot="end" name="calendar-outline"></ion-icon>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col id="desc" class="ion-padding-start">
+                        <div style="background-color: #ddd; margin: -6px -6px 0px -17px; border-radius: 5px 5px 0px 0px;">
+                            <ion-label class="ion-no-padding" color="blue" style="margin:0px 0px 0px 16px;">Descripcion</ion-label>
+                        </div>
+                        <ion-textarea style="margin: 0px 0px 0px -10px;"></ion-textarea>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col style="padding:20px">
+                        <ion-checkbox [(ngModel)]="isActive" color="orange"></ion-checkbox>
+                        <ion-label class="ion-margin-start">Agregar Participantes del Proyecto</ion-label>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-searchbar id="buscar" color="whiteblue" class="ion-no-padding" *ngIf="isActive" placeholder="Buscar Participantes"></ion-searchbar>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row *ngIf="isActive" style="overflow-x:auto;">
+                    <div id="tabla">
+                        <table>
+                            <tr>
+                                <th>Nombre de Usuario</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo</th>
+                                <th>Rol</th>
+                                <th>Agregar</th>
+                            </tr>
+                            <tr>
+                                <td>@Norman</td>
+                                <td>Norman</td>
+                                <td>Riascos</td>
+                                <td>samples@.com</td>
+                                <td>Gerente</td>
+                                <td id="ultimafila">
+                                    <ion-icon onclick="alert( 'anadir participante')" id="anadirparticipante" name="add-outline"></ion-icon>
+                                    <ion-icon onclick="alert( 'editar participante')" id="editarparticipante" name="brush-outline"></ion-icon>
+                                    <ion-icon onclick="alert( 'borrar participante')" id="borrarparticipante" name="close-circle-outline"></ion-icon>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>@Luis</td>
+                                <td>Luis</td>
+                                <td>Lopez</td>
+                                <td>samples@.com</td>
+                                <td>Apoyo</td>
+                                <td>
+                                    <ion-icon onclick="alert( 'anadir participante')" id="anadirparticipante" name="add-outline"></ion-icon>
+                                    <ion-icon onclick="alert( 'editar participante')" id="editarparticipante" name="brush-outline"></ion-icon>
+                                    <ion-icon onclick="alert( 'borrar participante')" id="borrarparticipante" name="close-circle-outline"></ion-icon>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                </ion-row>
+                <br>
+                <ion-col>
+                    <ion-row>
+                        <ion-col size="2.5">
+
+                        </ion-col>
+                        <ion-col size="4">
+                            <ion-button id="btnguardar" color="blue" expand="block" fill="clear" shape="round">
+                                Guardar
+                            </ion-button>
+                        </ion-col>
+                        <ion-col size="4">
+                            <ion-button id="btncancelar" color="blue" expand="block" fill="clear" shape="round">
+                                Cancelar
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

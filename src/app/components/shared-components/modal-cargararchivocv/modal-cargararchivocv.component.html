@@ -1,0 +1,62 @@
+<ion-content>
+    <ion-grid *ngIf="!isActive" fixed>
+        <ion-row class="ion-justify-content-center ion-padding-top">
+            <ion-col size="2">
+                <ion-img src="assets/iconos2/import_archivos.svg"></ion-img>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-padding-top">
+            <ion-col class="ion-text-center" size="10">
+                <ion-label style="flex-direction: row;">Arraste y suelte el archivo que desea subir </ion-label>
+                <br>
+                <ion-label>O</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-padding-top">
+            <ion-col size="2">
+                <ion-button color="whiteblue">
+                    Examinar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-padding-top">
+            <ion-col size="2">
+            </ion-col>
+            <ion-col>
+                <ion-button (click)="open()" color="whiteblue">
+                    Subir Archivo
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button (click)="closeModal()" color="whiteblue">
+                    Cancelar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid *ngIf="isActive" id="grid2" class="ion-padding-top" style="margin-top: 120px;">
+        <ion-row class="ion-justify-content-center">
+            <ion-img style="width: 50px;" src="assets/iconos2/import_archivos.svg">
+            </ion-img>
+            <ion-label class="ion-padding" color="blue">Certificado Magister Norman Riascos</ion-label>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-padding">
+            <ion-col size="10">
+                <ion-progress-bar value="0.42" color="orange"></ion-progress-bar>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-padding">
+            <ion-col class="ion-text-center" size="10">
+                <ion-label color="orange">Subiendo archivo...</ion-label>
+            </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-padding-top">
+            <ion-col size="2">
+                <ion-button (click)="close()" color="whiteblue">
+                    Cancelar
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

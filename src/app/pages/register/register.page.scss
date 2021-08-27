@@ -11,12 +11,11 @@
 
 .registerform {
     background-color: white;
-    top: 10px;
     height: 600px;
 }
 
 #contenedor {
-    width: 55%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -208,6 +207,12 @@ ion-row {
 #caja {
     display: grid;
     grid-template-columns: auto auto;
+}
+
+#input {
+    border: dimgray 2px solid;
+    border-radius: 12px;
+    color: #063457;
 }
 
 .main {

@@ -1,0 +1,44 @@
+<ion-content>
+    <div style="border-bottom: rgb(104, 104, 104) 2px solid;">
+        <h2 style="color: orange; font-weight: bold;">Preguntas</h2>
+    </div>
+    <div>
+        <p style="color: #073c66;font-weight: bold;">Mis preguntas</p>
+    </div>
+    <div>
+        <p style="color: #073c66;font-weight: bold;">Respuestas</p>
+    </div>
+    <div id="sector">
+        <p *ngIf="!isactive" (click)="active()" style="color: #073c66;font-weight: bold; cursor: pointer;">
+            Preguntas por Sector
+            <ion-icon name="caret-down-outline"></ion-icon>
+        </p>
+        <p *ngIf="isactive" (click)="active()" style="color: #073c66;font-weight: bold;">
+            Preguntas por Sector
+            <ion-icon name="caret-up-outline"></ion-icon>
+        </p>
+        <div>
+            <ion-chip *ngIf="isactive" color="orange" outline="true">
+                <ion-label>Juridico</ion-label>
+            </ion-chip>
+        </div>
+        <div>
+            <ion-chip *ngIf="isactive" color="orange" outline="true">
+                <ion-label>Deportes</ion-label>
+            </ion-chip>
+        </div>
+        <div>
+            <ion-chip *ngIf="isactive" color="orange" outline="true">
+                <ion-label>Ventas</ion-label>
+            </ion-chip>
+        </div>
+        <div>
+            <ion-chip *ngIf="isactive" color="orange" outline="true">
+                <ion-label>Ciencia y Tecnologia</ion-label>
+            </ion-chip>
+        </div>
+    </div>
+    <div>
+        <p style="color: #073c66;font-weight: bold;">Preguntas por numero de respuestas</p>
+    </div>
+</ion-content>

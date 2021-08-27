@@ -1,3 +1,4 @@
+import { SharedComponentsModule } from 'src/app/components/shared-components/shared-components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { PreguntasPage } from './preguntas.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    PreguntasPageRoutingModule
+    PreguntasPageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [PreguntasPage]
 })

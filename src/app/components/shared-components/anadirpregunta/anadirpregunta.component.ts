@@ -1,3 +1,4 @@
+import { CompartirComponent } from './../compartir/compartir.component';
 import { VisibilidadComponent } from './../visibilidad/visibilidad.component';
 import { PopoversectorComponent } from './../popoversector/popoversector.component';
 import { PopovertemaaComponent } from './../popovertemaa/popovertemaa.component';
@@ -31,6 +32,14 @@ export class AnadirpreguntaComponent implements OnInit {
       console.log('onDidDismiss resolved with role', role);
     }
 
+    async compartilink() {
+      const modal = await this.modalctrl.create({
+        component: CompartirComponent,
+        cssClass: 'my-custom-class'
+      });
+      return await modal.present();
+    }
+
     async PopoverSector(ev: any) {
       const popover = await this.popoverctrl.create({
         component: PopoversectorComponent,
@@ -54,6 +63,11 @@ export class AnadirpreguntaComponent implements OnInit {
   
       const { role } = await popover.onDidDismiss();
       console.log('onDidDismiss resolved with role', role);
+    }
+
+    compartirlink(){
+      this.modalctrl.dismiss();
+this.compartilink();
     }
 
     ngOnInit() {}

@@ -1,0 +1,122 @@
+<ion-header>
+    <app-header></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="row">
+        <div class="side">
+            <app-left-cv></app-left-cv>
+        </div>
+        <div class="main">
+            <ion-grid>
+                <ion-row>
+                    <app-info></app-info>
+                </ion-row>
+            </ion-grid>
+            <ion-title class="ion-margin" color="whiteblue" style="background-color: #043C66;  border-radius: 12px 12px 5px 5px;">Habilidades</ion-title>
+            <ion-grid class="ion-margin">
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>NodeJs</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>Liderazgo</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>MongoDB</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>Java</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>Emprendimiento</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>Ruby</div>
+                    </ion-col>
+                    <ion-col col-6>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>Inteligencia Emocional</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-fab horizontal="end" vertical="center" slot="fixed">
+                                <ion-fab-button color="whiteblue" style="width: 25px;height: 25px;">
+                                    <ion-icon name="checkmark-outline"></ion-icon>
+                                </ion-fab-button>
+                            </ion-fab>HTML</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row id="rr" style="border-top:1px gray solid;">
+                    <ion-col col-6>
+                        <div>Ruby</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>MongoDB</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>Java</div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-searchbar class="ion-no-padding" id="buscar"></ion-searchbar>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+            <ion-row>
+                <ion-col>
+                </ion-col>
+                <ion-col>
+                    <div id="btn">
+                        <ion-button color="whiteblue" id="Guardar">Guardar</ion-button>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div id="btn">
+                        <ion-button (click)="closeModal()" color="whiteblue" id="Cerrar">Cerrar</ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+        </div>
+    </div>
+</ion-content>

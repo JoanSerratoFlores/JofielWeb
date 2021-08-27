@@ -4,18 +4,7 @@
             <ion-icon name="close-outline"></ion-icon>
         </ion-fab-button>
     </ion-fab>
-    <ion-row class="ion-margin-top">
-        <ion-col>
-            <ion-button id="anadir">
-                Anadir pregunta
-            </ion-button>
-        </ion-col>
-        <ion-col>
-            <ion-button id="compartir">
-                Compartir Contenido
-            </ion-button>
-        </ion-col>
-    </ion-row>
+
     <ion-row class="ion-margin-top">
         <ion-col size="2">
             <ion-img src="assets/iconos2/avatar.png"></ion-img>
@@ -57,16 +46,15 @@
             </ion-button>
         </ion-col>
     </ion-row>
-    <ion-row style="border-top: #ddd 2px solid;">
-        <ion-col size="3" style="border-right: #ddd 1px solid; height: 50%;">
-            <ion-label>Compartir</ion-label>
+    <ion-row class="ion-margin-top">
+        <ion-col>
+            <ion-button id="anadir">
+                Anadir pregunta
+            </ion-button>
         </ion-col>
-        <ion-col class="ion-margin-start">
-            <ion-label>Compartir Contenido</ion-label>
-        </ion-col>
-        <ion-col class="ion-no-margin">
-            <ion-button (click)="dismissmodal()" id="cancelar" size="small" class="ion-float-right ion-no-margin">
-                Cancelar
+        <ion-col>
+            <ion-button (click)="compartirlink()" id="compartir">
+                Compartir Contenido
             </ion-button>
         </ion-col>
     </ion-row>

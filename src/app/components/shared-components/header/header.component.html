@@ -27,7 +27,7 @@
                 <ion-img id="coin" src="assets/iconos/monetiza.png"></ion-img>
                 <ion-label style="color: white;font-size: small;">Monetizar</ion-label>
             </div>
-            <div class="ion-margin-start">
+            <div style="cursor: pointer;" (click)="notificationPopover($event) " class="ion-margin-start">
                 <ion-img id="noti" src="assets/iconos/noti.png"></ion-img>
                 <ion-label style="color: white;font-size: small;">Notificaciones </ion-label>
             </div>
@@ -36,7 +36,7 @@
                     Preguntar algo
                 </ion-button>
             </div>
-            <div class="ion-margin-start ion-margin-end">
+            <div style="cursor: pointer;" (click)="presentPopover($event)" class="ion-margin-start ion-margin-end">
                 <ion-img id="avatar" src="assets/iconos2/Yo.png"></ion-img>
                 <ion-label id="yo">Yo</ion-label>
             </div>
@@ -67,7 +67,7 @@
             <div style="margin-right: 5px;">
                 <ion-img id="coin" src="assets/iconos/monetiza.png"></ion-img>
             </div>
-            <div style="margin-right: 5px;">
+            <div (click)="notificationPopover($event)" style="margin-right: 5px;">
                 <ion-img id="noti" src="assets/iconos/noti.png"></ion-img>
             </div>
             <div style="margin-right: 5px;">
@@ -75,7 +75,7 @@
                     Preguntar <br> algo
                 </ion-button>
             </div>
-            <div style="margin-right: 5px;" class="ion-margin-end">
+            <div (click)="presentPopover($event)" style="margin-right: 5px;" class="ion-margin-end">
                 <ion-img id="avatar" src="assets/iconos2/Yo.png"></ion-img>
             </div>
         </ion-row>

@@ -124,6 +124,44 @@
     }
 }
 
+.popoveropciones {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: fit-content;
+            height: fit-content;
+        }
+    }
+}
+
+.popoverperfil {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: 25%;
+            height: fit-content;
+            //margin-left: -45px;
+        }
+    }
+}
+
+.popovernotification {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: 50%;
+            height: fit-content;
+            //margin-left: -45px;
+        }
+    }
+}
+
 .popoversector {
     ion-backdrop {}
     .popover-wrapper {
@@ -132,6 +170,39 @@
             app-popover {}
             width: fit-content;
             height: fit-content;
+        }
+    }
+}
+
+ion-modal.fullscreen {
+    --width: 100%;
+    --height: 100%;
+    --border-radius: 0;
+}
+
+@media (max-width: 700px) {
+    .popoverperfil {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                height: fit-content;
+                margin-left: 7px;
+            }
+        }
+    }
+    .popovernotification {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: 75%;
+                height: fit-content;
+                //margin-left: -45px;
+            }
         }
     }
 }

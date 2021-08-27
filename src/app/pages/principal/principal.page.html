@@ -4,11 +4,9 @@
 
 <ion-content>
     <div class="row">
-        <div class="side" style="background: white;">
+        <div class="side" style="background:#ddd;border-right: white 5px solid;">
             <app-sectionleft></app-sectionleft>
         </div>
-
-
         <div class="main" style="background: #ddd;">
             <div id="aprendizaje">
                 <div id="audio">
@@ -84,7 +82,7 @@
                             </p>
                         </ion-col>
                         <ion-col size="1">
-                            <ion-icon class="ion-padding-top" (click)="presentPopover()" name="ellipsis-horizontal-outline"></ion-icon>
+                            <ion-icon class="ion-padding-top" (click)="presentPopover($event)" name="ellipsis-horizontal-outline"></ion-icon>
                         </ion-col>
                         <ion-row class="btnreaction ion-justify-content-center ion-no-margin">
                             <ion-icon name="chatbox-outline"></ion-icon>
@@ -248,8 +246,6 @@
                 </ion-grid>
             </div>
         </div>
-
-
         <div class="side" style="background: #ddd;">
             <app-sectionright></app-sectionright>
         </div>

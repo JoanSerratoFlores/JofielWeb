@@ -1,0 +1,71 @@
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+.side {
+    -ms-flex: 12%;
+    /* IE10 */
+    flex: 12%;
+    padding: 10px;
+}
+
+.side::before {
+    content: '';
+    height: 75%; //You can change this if you want smaller/bigger borders
+    width: 2px;
+    position: absolute;
+    right: -10px;
+    top: 0; // If you want to set a smaller height and center it, change this value
+    background-color: #043C66; // The color of your border
+    //
+}
+
+.main {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+    padding: 10px;
+}
+
+ion-select::part(text) {
+    opacity: 0;
+}
+
+ion-select::part(icon) {
+    color: #043C66;
+    opacity: 1;
+}
+
+ion-select {
+    width: 100%;
+    justify-content: center;
+}
+
+#select {
+    width: 50%;
+    border-radius: 12px;
+    --border-radius: 12px;
+    background-color: #ddd;
+    --background: #ddd;
+    color: #043C66;
+}
+
+#Cerrar {
+    border: 2px solid #F4870F;
+    border-radius: 5px;
+}
+
+ion-checkbox {
+    --border-color: orange;
+}
+
+@media (max-width: 600px) {
+    #select {
+        width: 100%;
+    }
+}

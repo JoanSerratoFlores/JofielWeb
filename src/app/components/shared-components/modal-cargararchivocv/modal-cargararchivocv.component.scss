@@ -1,0 +1,17 @@
+ion-button {
+    border: 1px orange solid;
+    --border-radius: 5px;
+    border-radius: 5px;
+}
+
+ion-progress-bar {
+    border: 4px orange solid;
+    position: relative;
+    border-radius: 10px;
+    height: 14px;
+    border: 0;
+}
+
+#grid2 {
+    bottom: 100%;
+}

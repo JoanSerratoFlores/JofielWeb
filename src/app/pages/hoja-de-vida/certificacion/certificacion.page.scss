@@ -1,0 +1,104 @@
+    .row {
+        display: -ms-flexbox;
+        /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap;
+        /* IE10 */
+        flex-wrap: wrap;
+    }
+    
+    .side {
+        -ms-flex: 12%;
+        /* IE10 */
+        flex: 12%;
+        padding: 10px;
+    }
+    
+    .side::before {
+        content: '';
+        height: 75%; //You can change this if you want smaller/bigger borders
+        width: 2px;
+        position: absolute;
+        right: -10px;
+        top: 0; // If you want to set a smaller height and center it, change this value
+        background-color: #043C66; // The color of your border
+        //
+    }
+    
+    .main {
+        -ms-flex: 50%;
+        /* IE10 */
+        flex: 50%;
+        padding: 10px;
+    }
+    
+    ion-row {
+        width: 97%;
+    }
+    
+    ion-select::part(icon) {
+        color: #043C66;
+        opacity: 1;
+    }
+    
+    ion-select::part(text) {
+        color: #043C66;
+    }
+    
+    ion-select::part(placeholder) {
+        color: #043C66;
+        opacity: 1;
+    }
+    
+    ion-select {
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+    
+    ion-checkbox {
+        --border-color: orange;
+    }
+    
+    #Guardar {
+        border: 2px solid #F4870F;
+        border-radius: 5px;
+    }
+    
+    #Cerrar {
+        border: 2px solid #F4870F;
+        border-radius: 5px;
+    }
+    
+    #fechainicio {
+        border: 3px #043C66 solid;
+        border-radius: 12px;
+        color: #043C66;
+        height: 72%;
+    }
+    
+    #fechafinal {
+        border: 3px #043C66 solid;
+        border-radius: 12px;
+        color: #043C66;
+        height: 72%;
+    }
+    
+    table {
+        td,
+        th {
+            //border: 1px solid;
+            padding: 2px;
+        }
+        th {
+            background-color: #dddddd;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+        #table {
+            width: 33px;
+        }
+    }
