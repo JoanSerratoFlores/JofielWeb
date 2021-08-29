@@ -7,17 +7,13 @@
                 <ion-img id="inicio" src="assets/iconos/inicio.png"></ion-img>
                 <ion-label style="color: white;font-size: small;">Inicio</ion-label>
             </div>
-            <div>
-                <ion-img id="circulo" src="assets/iconos/circulos.png"></ion-img>
-                <ion-label style="color: white;font-size: small;">Circulos</ion-label>
+            <div (click)="toCuestion()">
+                <ion-img id="pregunta" src="assets/iconos/cuestionarios.png"></ion-img>
+                <ion-label style="color: white;font-size: small;">Cuestionario</ion-label>
             </div>
             <div class="ion-margin-start">
-                <ion-img id="pregunta" src="assets/iconos2/mensajepregunta.png"></ion-img>
-                <ion-label style="color: white;font-size: small;">Responder</ion-label>
-            </div>
-            <div class="ion-margin-start">
-                <ion-img id="mensaje" src="assets/iconos/mensaje.png"></ion-img>
-                <ion-label style="color: white;font-size: small;">Mensaje</ion-label>
+                <ion-img id="mensaje" src="assets/iconos/suscribirse.png"></ion-img>
+                <ion-label style="color: white;font-size: small;">Suscribirse</ion-label>
             </div>
             <div class="ion-margin-start">
                 <ion-img id="audio" src="assets/iconos/audio.png"></ion-img>
@@ -49,17 +45,14 @@
         <ion-img class="ion-margin-start" id="logo" src="assets/iconos/logo.png"></ion-img>
         <ion-searchbar id="buscar" placeholder="Busca en Jofiel "></ion-searchbar>
         <ion-row style="margin-left: auto;margin-right: auto;display: flex;align-items: center;">
-            <div style="margin-right: 5px;" (click)="toHome()">
+            <div (click)="toHome()" style="margin-right: 5px;">
                 <ion-img id="inicio" src="assets/iconos/inicio.png"></ion-img>
             </div>
             <div style="margin-right: 5px;">
-                <ion-img id="circulo" src="assets/iconos/circulos.png"></ion-img>
+                <ion-img id="pregunta" src="assets/iconos/cuestionarios.png"></ion-img>
             </div>
             <div style="margin-right: 5px;">
-                <ion-img id="pregunta" src="assets/iconos2/mensajepregunta.png"></ion-img>
-            </div>
-            <div style="margin-right: 5px;">
-                <ion-img id="mensaje" src="assets/iconos/mensaje.png"></ion-img>
+                <ion-img id="mensaje" src="assets/iconos/suscribirse.png"></ion-img>
             </div>
             <div style="margin-right: 5px;">
                 <ion-img id="audio" src="assets/iconos/audio.png"></ion-img>

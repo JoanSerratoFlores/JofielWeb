@@ -1,15 +1,15 @@
 import { Router } from '@angular/router';
-import { NotificacionesComponent } from './../notificaciones/notificaciones.component';
-import { PopoverController } from '@ionic/angular';
-import { PerfilComponent } from './../perfil/perfil.component';
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { NotificacionesComponent } from '../notificaciones/notificaciones.component';
+import { PerfilComponent } from '../perfil/perfil.component';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-header-cv',
+  templateUrl: './header-cv.component.html',
+  styleUrls: ['./header-cv.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderCVComponent implements OnInit {
 
   constructor(
     public popoverController:PopoverController,
@@ -40,12 +40,12 @@ export class HeaderComponent implements OnInit {
     const { role } = await popover.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
   }
-
   toHome(){
     this.router.navigateByUrl("principal")
   }
-
-  ngOnInit(
-  ) {}
+  toCuestion(){
+    this.router.navigateByUrl("preguntas")
+  }
+  ngOnInit() {}
 
 }

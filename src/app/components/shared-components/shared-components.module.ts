@@ -1,3 +1,4 @@
+import { HeaderCVComponent } from './header-cv/header-cv.component';
 import { LeftCVComponent } from './left-cv/left-cv.component';
 import { SectionrightcuestionnComponent } from './sectionrightcuestionn/sectionrightcuestionn.component';
 import { SectionleftcuestionnComponent } from './sectionleftcuestionn/sectionleftcuestionn.component';
@@ -47,7 +48,8 @@ import { ModalCargararchivocvComponent } from './modal-cargararchivocv/modal-car
     InfoComponent,
     FuncioneslaboralesComponent,
     HistorialhabilidadesComponent,
-    ModalCargararchivocvComponent],
+    ModalCargararchivocvComponent,
+    HeaderCVComponent],
   exports:[
     HeaderComponent,
     SectionleftComponent,
@@ -69,7 +71,8 @@ import { ModalCargararchivocvComponent } from './modal-cargararchivocv/modal-car
     InfoComponent,
     FuncioneslaboralesComponent,
     HistorialhabilidadesComponent,
-    ModalCargararchivocvComponent],
+    ModalCargararchivocvComponent,
+    HeaderCVComponent],
   imports: [
     CommonModule,
     IonicModule
