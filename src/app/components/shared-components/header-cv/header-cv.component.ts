@@ -43,7 +43,7 @@ export class HeaderCVComponent implements OnInit {
   toHome(){
     this.router.navigateByUrl("principal")
   }
-  toCuestion(){
+  toCuestion(){  
     this.router.navigateByUrl("preguntas")
   }
   ngOnInit() {}
