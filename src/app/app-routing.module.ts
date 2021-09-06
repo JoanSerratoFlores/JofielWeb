@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'principal',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -21,19 +22,23 @@ const routes: Routes = [
   },
   {
     path: 'principal',
-    loadChildren: () => import('./pages/principal/principal.module').then( m => m.PrincipalPageModule)
+    loadChildren: () => import('./pages/principal/principal.module').then( m => m.PrincipalPageModule),
+    canActivate:[AuthGuard]
   },
   {
     path: 'perfil',
-    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule),
+    canActivate:[AuthGuard]
   },
   {
     path: 'preguntas',
-    loadChildren: () => import('./pages/preguntas/preguntas.module').then( m => m.PreguntasPageModule)
+    loadChildren: () => import('./pages/preguntas/preguntas.module').then( m => m.PreguntasPageModule),
+    canActivate:[AuthGuard]
   },
   {
     path: 'hoja-de-vida',
-    loadChildren: () => import('./pages/hoja-de-vida/hoja-de-vida.module').then( m => m.HojaDeVidaPageModule)
+    loadChildren: () => import('./pages/hoja-de-vida/hoja-de-vida.module').then( m => m.HojaDeVidaPageModule),
+    canActivate:[AuthGuard]
   },
 
 

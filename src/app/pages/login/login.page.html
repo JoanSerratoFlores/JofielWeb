@@ -22,17 +22,19 @@
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </ion-button>
                 </ion-row>
-                <form class="ion-padding-top">
-                    <ion-row>
-                        <ion-col size="12">
-                            <ion-input type="text" id="inputEmail" class="nombre" placeholder="Nombre de usuario o email" required autofocus></ion-input>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col size="12">
-                            <ion-input type="password" id="inputPassword" class="contrasena" placeholder="Contraseña" required></ion-input>
-                        </ion-col>
-                    </ion-row>
+                <form class="form ion-padding-top">
+                    <div class="form-group">
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-input [(ngModel)]="loginUserData.email" name="email" type="text" id="inputEmail" class="nombre" placeholder="Nombre de usuario o email" required></ion-input>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-input [(ngModel)]="loginUserData.password" name="password" type="password" id="inputPassword" class="contrasena" placeholder="Contraseña" required></ion-input>
+                            </ion-col>
+                        </ion-row>
+                    </div>
                     <ion-row>
                         <ion-col size="9">
                             <p style="margin: 0px;font-size: 0.7rem;line-height: 14px;">Al entrar con una red social indica que has leído y acepta las <strong style="color: blue;">condiciones de servicio. Política de Privacidad y Política de Derechos de Autor </strong></p>

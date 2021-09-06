@@ -1,3 +1,5 @@
+import { PopoverController } from '@ionic/angular';
+import { AuthenticationService } from 'src/app/services/authentication.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private auth:AuthenticationService,
+    private popoverctrl:PopoverController) { }
 
   ngOnInit() {}
+
+  logout(){
+    this.popoverctrl.dismiss()
+    this.auth.logout()
+  }
 
 }
