@@ -52,14 +52,14 @@
                                 </ion-col>
                             </ion-row>
                         </ion-col>
-                        <ion-col class="ion-no-margin ion-no-padding" size="4">
+                        <ion-col class="ion-no-margin ion-no-padding" size="4" *ngFor="let item of questions; index as i;">
                             <ion-button id="follow">
                                 Seguir a Norman
                             </ion-button>
-                            <ion-row size="12 ">
+                            <ion-row size="12">
                                 <ion-col class="ion-no-margin ion-no-padding">
                                     <ion-button id="follow">
-                                        Internet
+                                        {{item.visibility}}
                                     </ion-button>
                                 </ion-col>
                                 <ion-col class="ion-no-margin ion-no-padding">
@@ -70,31 +70,33 @@
                             </ion-row>
                         </ion-col>
                     </ion-row>
-                    <ion-row class="ion-padding ion-no-margin">
-                        <ion-row class="ion-no-padding">
-                            <ion-col size="12">
-                                <b class="ion-no-padding" style="font-size: small;">Como invertir en la bolsa de valores por medio de Forex?</b>
+                    <div *ngFor="let item of questions; index as i;">
+                        <ion-row class="ion-padding ion-no-margin">
+                            <ion-row class="ion-no-padding">
+                                <ion-col size="12">
+                                    <b class="ion-no-padding" style="font-size: small;">{{ item.title }}{{ i}}</b>
+                                </ion-col>
+                            </ion-row>
+                            <ion-col size="11">
+                                <p class="ion-text-justify" style="font-size:smaller; margin-top: 0px;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese
+                                    durcheinander warf um ein Musterbuch zu erstellen.
+                                </p>
                             </ion-col>
+                            <ion-col size="1">
+                                <ion-icon class="ion-padding-top" (click)="presentPopover($event)" name="ellipsis-horizontal-outline"></ion-icon>
+                            </ion-col>
+                            <ion-row class="btnreaction ion-justify-content-center ion-no-margin">
+                                <ion-icon name="chatbox-outline"></ion-icon>
+                                <p id="comments">200 comentarios</p>
+                                <ion-icon style="margin-left:10px;" name="eye-outline"></ion-icon>
+                                <p id="view">200 visualizaciones</p>
+                                <ion-icon style="margin-left:10px;" name="share-social-outline"></ion-icon>
+                                <p id="share">200 compartidas</p>
+                                <ion-icon style="margin-left:10px;" name="add-outline"></ion-icon>
+                                <p id="sigue">200 siguiendo</p>
+                            </ion-row>
                         </ion-row>
-                        <ion-col size="11">
-                            <p class="ion-text-justify" style="font-size:smaller; margin-top: 0px;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese
-                                durcheinander warf um ein Musterbuch zu erstellen.
-                            </p>
-                        </ion-col>
-                        <ion-col size="1">
-                            <ion-icon class="ion-padding-top" (click)="presentPopover($event)" name="ellipsis-horizontal-outline"></ion-icon>
-                        </ion-col>
-                        <ion-row class="btnreaction ion-justify-content-center ion-no-margin">
-                            <ion-icon name="chatbox-outline"></ion-icon>
-                            <p id="comments">200 comentarios</p>
-                            <ion-icon style="margin-left:10px;" name="eye-outline"></ion-icon>
-                            <p id="view">200 visualizaciones</p>
-                            <ion-icon style="margin-left:10px;" name="share-social-outline"></ion-icon>
-                            <p id="share">200 compartidas</p>
-                            <ion-icon style="margin-left:10px;" name="add-outline"></ion-icon>
-                            <p id="sigue">200 siguiendo</p>
-                        </ion-row>
-                    </ion-row>
+                    </div>
                     <ion-row class="cajareaccion ion-justify-content-center ion-no-margin">
                         <ion-img src="assets/icon/calp.png" (click)="Popoverrespuesta($event)"></ion-img>
                         <p>50</p>
@@ -114,14 +116,14 @@
                         <p class="ion-no-margin ion-margin-start" style="font-size:x-small;">Otras respuestas(30)</p>
                     </ion-row>
                     <ion-row style="padding: 0px 0px 0px 16px;background-color: #ddd;border-radius: 25px;margin: 10px 10px 0px 10px;">
-                        <ion-img style="width:33px;" src="assets/iconos/mensaje.svg "></ion-img>
+                        <ion-img style="width:33px;" src="assets/iconos/mensaje.svg"></ion-img>
                         <p style="padding-left: 10px;">Comentarios</p>
                     </ion-row>
                 </ion-grid>
                 <ion-grid style="border-top:grey 2px solid;">
                     <ion-row class="cajacomentarioprincipal">
                         <ion-col size="1.5" class="ion-no-padding">
-                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png"></ion-img>
                         </ion-col>
                         <ion-col class="commentusuario" size="10">
                             <ion-row class="ion-no-margin ion-no-padding">
@@ -151,7 +153,7 @@
                         </ion-row>
                         <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;" size="12">
                             <ion-col size="1.5" class="ion-no-padding">
-                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png"></ion-img>
                             </ion-col>
                             <ion-col class="commentusuario" size="10">
                                 <ion-row class="ion-no-margin ion-no-padding">
@@ -182,7 +184,7 @@
                         </ion-row>
                         <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;">
                             <ion-col size="1.5" class="ion-no-padding">
-                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                                <ion-img style="height: 50px;" src="assets/iconos2/avatar.png"></ion-img>
                             </ion-col>
                             <ion-col class="commentusuario" size="10">
                                 <ion-row class="ion-no-margin ion-no-padding">
@@ -214,7 +216,7 @@
                     </ion-row>
                     <ion-row class="cajacomentarioprincipal">
                         <ion-col size="1.5" class="ion-no-padding">
-                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
+                            <ion-img style="height: 50px;" src="assets/iconos2/avatar.png"></ion-img>
                         </ion-col>
                         <ion-col class="commentusuario" size="10">
                             <ion-row class="ion-no-margin ion-no-padding">

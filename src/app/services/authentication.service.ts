@@ -16,10 +16,12 @@ const TOKEN_KEY='jwt-token';
 })
 export class AuthenticationService {
 
+  
+
   public user:Observable<any>;
   private userData =new BehaviorSubject(null);
 
-  private _loginUrl="https://jofiel-api.egasystems.com/api/auth/login";
+  private _loginUrl="http://localhost:3000/api/auth/login";
 
   constructor(private storage: Storage, private http: HttpClient, private plt: Platform, private router: Router) { 
 
@@ -47,14 +49,14 @@ export class AuthenticationService {
     );
   }
 
-  loginUser(user: { email: string; password: string; }):Observable<any>{
-    return this.http.post<any>(this._loginUrl,user).pipe(
+  loginUser(user: { email: string; password: string; }, data):Observable<any>{
+    return this.http.post<any>(this._loginUrl,user,data).pipe(
       take(1),
       map(res=>{
         return res
       }),
       switchMap(token=>{
-        let decoded=helper.decodeToken(token.token);
+        let decoded=helper.decodeToken();
         console.log('login decoded:',decoded)
         this.userData.next(decoded);
         let storageObs=from(this.storage.set(TOKEN_KEY,token));
